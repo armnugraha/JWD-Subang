@@ -47,7 +47,7 @@
 
 if (!empty($_POST["judul"])) {
 
-	$sql = "udpate buku set judul=".$_POST["judul"].",pengarang=".$_POST["pengarang"].",tahun=".$_POST["tahun"]." where id=".$_POST["id"]." ";
+	$sql = "UPDATE buku SET judul='".$_POST["judul"]."',pengarang='".$_POST["pengarang"]."',tahun=".$_POST["tahun"]." where id=".$_POST["id"]." ";
 
 	if(mysqli_query($con,$sql)) {
 		echo "berhasil udpate 1 baris ";
