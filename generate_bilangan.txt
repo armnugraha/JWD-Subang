@@ -1,0 +1,1 @@
+Input : 9123012897<br> Output : 9,9,7,3,1,10,2,2,8<br> Ganjil : 6 <br> Genap : 4
