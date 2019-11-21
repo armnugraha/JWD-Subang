@@ -16,6 +16,12 @@ db_insert.php
 
 <?php
 
+include('test.php');
+
+$coba = "";
+$pengarang = "";
+$tahun = "";
+
 if (!empty($_POST["judul"])) {
 
 	$host = "localhost";
@@ -28,10 +34,9 @@ if (!empty($_POST["judul"])) {
 		die("koneksi db tidak berhasil: ".mysqli_connect_error());
 	}
 
-	$sql = "insert into buku (judul,pengarang,tahun)
-		values ('".$_POST["judul"]."',
-		'".$_POST["pengarang"]."',
-		".$_POST["tahun"].")";
+	$coba = coba("asd");
+
+	var_dump($sql);
 
 	if(mysqli_query($con,$sql)) {
 		echo "berhasil masuk 1 baris ";
