@@ -13,6 +13,50 @@
 <body>
 
 	<?php
+
+		// $input = 5 * 2;
+		// $input = 5 * 2 + 1;
+		$input = 5;
+
+		$bilang_fakt = 1;
+
+		for ($i=1; $i <= $input; $i++) { 
+
+			// genap
+			if ($i % 2 == 0) {
+				// echo $i;
+			}
+
+			if ($i % 2 == 1) {
+				echo $i;
+			}
+
+			$bilang_fakt = $bilang_fakt*$i;
+
+		}
+
+		// echo $bilang_fakt;
+
+		for ($i=1; $i <= $input; $i++) { 
+
+			$a = 0;
+
+			for ($j=1; $j <= $i; $j++) { 
+				if ($i % $j == 0) {
+					$a++;
+				}
+			}
+
+			if ($a == 2) {
+				// echo $i . '<br>';
+			}
+
+		}
+
+		// var_dump($bilang_fakt);
+
+		die();
+
 		$crtable = '';
 
 		$jumlah_tb = 2;
