@@ -27,17 +27,15 @@
 				// echo $i;
 			}
 
+			//ganjil
 			if ($i % 2 == 1) {
-				echo $i;
+				// echo $i;
 			}
 
+			// faktorial
 			$bilang_fakt = $bilang_fakt*$i;
 
-		}
-
-		// echo $bilang_fakt;
-
-		for ($i=1; $i <= $input; $i++) { 
+			// bilangan prima
 
 			$a = 0;
 
@@ -50,6 +48,14 @@
 			if ($a == 2) {
 				// echo $i . '<br>';
 			}
+
+		}
+
+		// echo $bilang_fakt;
+
+		for ($i=1; $i <= $input; $i++) { 
+
+			
 
 		}
 
